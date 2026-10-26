@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style-Home.css" />
+  </head>
+  <body>
+    <header class="Banner">
+      <div class="Logo-Section">
+        <a href="index.html">
+          <img src="banner.jpg" alt="Logo" class="Logo" />
+        </a>
+      </div>
+    </header>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Faculty.html">Faculty Members</a></li>
+        <li><a href="Training.html">Professional Training</a></li>
+        <li><a href="Video.html">Video CoST</a></li>
+        <li><a href="Programs.html">Bachelor Programs</a></li>
+        <li><a href="Labs.html">Computer Labs</a></li>
+      </ul>
+    </nav>
+    <section class="Content-Home">
+      <p>
+        ស្វាគមន៍មកកាន់មហាវិទ្យាល័យវិទ្យាសាស្ត្រ
+        និងបច្ចេកវិទ្យានៃសាកលវិទ្យាល័យកម្ពុជា។ សម្រាប់ប្អូនៗសិស្សានុសិស្ស
+        ដែលមានបំណងចង់បន្តការសិក្សាថ្នាក់បរិញ្ញាបត្ររង និងថ្នាក់បរិញ្ញាបត្រ។
+        សូមចុះឈ្មោះជាមួយយើងឥឡូវនេះ ឬអាចអញ្ជើញមកកាន់សាកលវិទ្យាល័យផ្ទាល់ក៏បាន។
+      </p>
+      <p>
+        Welcome to College of Science and Technology of The University of
+        Cambodia. For everyone who wishes to pursue for any AA and BA degrees of
+        the study programs, please register now or visit the campus of The
+        University of Cambodia.
+      </p>
+      <h1>Studying Activities in CoST College of Science and Technology</h1>
+      <div class="image-card">
+        <img src="a.jpg" alt="Activity 1" />
+        <p class="caption">Web Development-HTML CSS</p>
+      </div>
+      <div class="image-card">
+        <img src="b.JPG" alt="Activity 2" />
+        <p class="caption">Studying Multimedia Lab</p>
+      </div>
+      <div class="image-card">
+        <img src="c.jpg" alt="Activity 3" />
+        <p class="caption">Studying IT-Center Lab</p>
+      </div>
+      <div class="image-card">
+        <img src="d.jpg" alt="Activity 4" />
+        <p class="caption">Graduation 2025</p>
+      </div>
+    </section>
+    <section class="Mid-point">
+      <img src="cost.jpg" alt="Mid Point Image" />
+      <p>ស្វាគមន៏! IT EXPERT College of Science and Technology</p>
+    </section>
+    <section class="Content-Home-2">
+      <h1>Computer Labs College CoST</h1>
+      <div class="image-card">
+        <img src="e.jpg" alt="Room 1" />
+        <p class="caption">Web Development-HTML CSS</p>
+      </div>
+      <div class="image-card">
+        <img src="f.jpg" alt="Room  2" />
+        <p class="caption">Studying Multimedia Lab</p>
+      </div>
+      <div class="image-card">
+        <img src="g.jpg" alt="Room 3" />
+        <p class="caption">Studying IT-Center Lab</p>
+      </div>
+      <div class="image-card">
+        <img src="h.jpg" alt="Room  4" />
+        <p class="caption">Graduation 2025</p>
+      </div>
+    </section>
+    <footer class="Footer">
+      <img src="uc no bg.png" alt="Logo Image" />
+      <p>Copyright © The University of Cambodia.</p>
+    </footer>
+    <script>
+        const cards = document.querySelectorAll('.image-card');
+        cards.forEach(card => {
+            card.addEventListener('click', function() {
+                const isAlreadyExpanded = this.classList.contains('expanded');
+                cards.forEach(c => c.classList.remove('expanded'));
+                if (!isAlreadyExpanded) {
+                    this.classList.add('expanded');
+                }
+            });
+        });
+    </script>
+  </body>
+</html>

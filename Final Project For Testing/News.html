@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style-News.css">
+</head>
+<body>
+    <header class="Banner">
+    <div class="Logo-Section">
+        <a href="index.html">
+        <img src="banner.jpg" alt="Logo" class="Logo" />
+        </a>
+    </div>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="Faculty.html">Faculty Members</a></li>
+            <li><a href="Training.html">Professional Training</a></li>
+            <li><a href="Video.html">Video CoST</a></li>
+            <li><a href="Programs.html">Bachelor Programs</a></li>
+            <li><a href="Labs.html">Computer Labs</a></li>
+        </ul>
+    </nav>
+    <section class="Content-News">
+        <p>📢អាហារូបករណ៍ពិសេស 60% សម្រាប់សិស្សនិស្សិតទូទៅ និង 70% សម្រាប់មន្រ្តីរាជការ និងគ្រូបង្រៀន ស្ថិតនៅក្រោមក្រសួងអប់រំ យុវជន និងកីឡា ដោយមិនឆ្លងកាត់ប្រឡង សម្រាប់វគ្គសិក្សាថ្មី វគ្គសិក្សាទី៣ កំពុងរង់ចាំអ្នក! ✍️ចាប់ផ្ដើមទទួលពាក្យចាប់ពីថ្ងៃផ្សាយដំណឹងនេះតទៅ វគ្គសិក្សាថ្មីចូលរៀននៅថ្ងៃចន្ទ ទី១៥ ខែ កក្កដា ឆ្នាំ២០២៤។ 👉សូមរួសរាន់ឡើងព្រោះចំនួនមានកំណត់! ព័ត៌មានលម្អិតសូមទាក់ទងលេខទូរស័ព្ទ៖ ☎️០៦៩ ៦៥៩ ៦០៩ / ០៧០ ៣៥១ ៧៣៨ (តេឡេក្រាម)។ សូមអរគុណ!</p>
+        <img src="news.jpg" alt="News Image" class="News-Image">
+    </section>
+    <script>
+        const cards = document.querySelectorAll('.Content-News img');
+        cards.forEach(card => {
+            card.addEventListener('click', function() {
+                const isAlreadyExpanded = this.classList.contains('expanded');
+                cards.forEach(c => c.classList.remove('expanded'));
+                if (!isAlreadyExpanded) {
+                    this.classList.add('expanded');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

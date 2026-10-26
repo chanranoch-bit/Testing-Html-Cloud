@@ -1,0 +1,55 @@
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+}
+.Banner {
+  background: linear-gradient(to bottom, #001b95 20% , 80% #ffffff);
+  text-align: center;
+}
+.Logo-Section img {
+  width: auto;
+  height: 182.8px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  background-color: #001b95;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.nav {
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 15px;
+    font-family: "Arial", sans-serif;
+  }
+  li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    letter-spacing: 0.5px;
+  }
+  a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+    text-decoration-color: #ffcc00;
+    text-decoration-thickness: 1.3px;
+  }
+}
